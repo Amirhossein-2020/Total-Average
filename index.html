@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Total Average</title>
     <link rel="stylesheet" href="./stylesheet.css">
-<body>
-    <div class="form">
-        <br>
-        <div class="row flex">
-            <input class="inputs lesson" type="text" placeholder="درس">
-            <input class="inputs grade" type="number" placeholder="نمره">
-            <input class="inputs weight" type="number" placeholder="واحد">
-            <button class="buttons submit">ثبت</button>
+
+    <body>
+        <div class="form">
+            <br>
+            <div class="row flex">
+                <input class="inputs lesson" type="text" placeholder="درس">
+                <input class="inputs grade" type="number" placeholder="نمره">
+                <input class="inputs weight" type="number" placeholder="واحد">
+                <button class="buttons submit">ثبت</button>
+            </div>
+            <br>
+            <div>
+                <table id="table">
+                    <caption>جدول دروس وارد شده</caption>
+                    <tr>
+                        <th>
+                            ردیف
+                        </th>
+                        <th>
+                            درس
+                        </th>
+                        <th>
+                            نمره
+                        </th>
+                        <th>
+                            واحد
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="flex">
+                <button class="buttons calculate">محاسبه کن</button>
+            </div>
+            <br>
+            <div class="results flex">
+                <p>میانگین:</p>
+                <span id="average">00</span>
+            </div>
         </div>
-        <br>
-        <div>
-            <table id="table">
-                <caption>جدول دروس وارد شده</caption>
-                <tr>
-                    <th>
-                        ردیف
-                    </th>
-                    <th>
-                        درس
-                    </th>
-                    <th>
-                        نمره
-                    </th>
-                    <th>
-                        واحد
-                    </th>                
-                </tr>
-            </table>
-        </div>
-        <br>
-        <div class="flex">
-            <button class="buttons calculate">محاسبه کن</button>
-        </div>
-        <br>
-        <div class="results flex">
-            <p>میانگین:</p>
-            <span id="average">00</span>
-        </div>
-    </div>
-    <script src="./app.js"></script>
-</body>
+        <script src="./app.js"></script>
+    </body>
+
 </html>
